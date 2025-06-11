@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>J.P CleanAuto - Accueil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Hero custom style */
+    .hero-section {
+      background: url('hero.png') no-repeat center center;
+      background-size: cover;
+      height: 70vh;
+      min-height: 350px;
+      position: relative;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top:0;left:0;right:0;bottom:0;
+      background:rgba(0,0,0,0.45);
+      z-index:1;
+    }
+    .hero-section > div {
+      position: relative;
+      z-index:2;
+    }
+    /* Testimonials */
+    .testimonial {
+      background: #f8f9fa;
+      border-radius: 1rem;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.07);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial .bi {
+      color: #ffb300;
+      font-size: 1.3rem;
+      vertical-align: -0.2em;
+    }
+    /* Services icons */
+    .service-icon {
+      font-size:3rem;
+      color:#f4c542;
+      margin-bottom:10px;
+    }
+    /* Contact Card */
+    .contact-card {
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.06);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 767.98px) {
+      .hero-section {
+        height: 40vh;
+        min-height: 200px;
+      }
+      .navbar-brand img {
+        width: 3cm;
+        height: 3cm;
+      }
+    }
+    .navbar-brand img {
+      width: 5cm;
+      height: 5cm;
+      max-width: none;
+      max-height: none;
+      margin-right: 10px;
+    }
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+    }
+    .navbar-nav .nav-item {
+      flex: 1;
+    }
+    .navbar-nav .nav-link {
+      display: block;
+      text-align: center;
+    }
+    .btn-warning {
+      font-weight: bold;
+      font-size: 1.15rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/1000000231.png" alt="Logo J.P CleanAuto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item d-flex align-items-center justify-content-start flex-fill">
+            <a class="nav-link active" href="#">Accueil</a>
+          </li>
+          <li class="nav-item d-flex align-items-center justify-content-center flex-fill">
+            <a class="nav-link" href="tarifs.html">Nos Tarifs</a>
+          </li>
+           <li class="nav-item d-flex align-items-center justify-content-center flex-fill">
+    <a class="nav-link" href="apropos.html">À propos de moi</a>
+  </li>
+          <li class="nav-item d-flex align-items-center justify-content-end flex-fill">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a class="btn btn-warning ms-lg-3 mt-3 mt-lg-0" href="rendezvous.html">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section text-white text-center">
+    <div>
+      <h1 class="display-5 fw-bold mb-3">Votre voiture impeccable, sans bouger de chez vous&nbsp;!</h1>
+      <p class="lead mb-4">Lavage auto à domicile — rapide, écologique, professionnel.</p>
+      <a href="rendezvous.html" class="btn btn-warning btn-lg me-2">Prendre rendez-vous</a>
+      <a href="tarifs.html" class="btn btn-outline-light btn-lg">Voir nos tarifs</a>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Nos Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-droplet-half service-icon"></i>
+        <h4>Lavage extérieur</h4>
+        <p>Un lavage efficace, sans gaspillage d’eau.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-car-front-fill service-icon"></i>
+        <h4>Lavage intérieur</h4>
+        <p>Aspirateur, tableau de bord, vitres intérieures…</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-star-fill service-icon"></i>
+        <h4>Formule Premium</h4>
+        <p>Nettoyage vapeur, sièges, désinfection complète.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI NOUS CHOISIR -->
+ <section class="bg-light py-5">
+  <div class="container text-center">
+    <h3 class="mb-4">Pourquoi choisir J.P CleanAuto&nbsp;?</h3>
+    <div class="row mt-4">
+      <div class="col-md-3 col-6 mb-3">
+        <i class="bi bi-truck service-icon"></i><br>
+        <span>Déplacement gratuit (50&nbsp;km)</span>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 16 16" style="margin-bottom:10px;">
+          <path d="M4.291 13.956s4.978.113 8.314-3.222c3.336-3.336 3.222-8.314 3.222-8.314s-4.978-.113-8.314 3.222c-3.336 3.336-3.222 8.314-3.222 8.314zm7.226-2.97c-2.729 2.729-6.345 2.812-7.1 2.812.001-.755.083-4.372 2.812-7.1 2.729-2.729 6.345-2.811 7.1-2.811-.001.755-.083 4.372-2.812 7.1z" fill="#ffb300"/>
+        </svg>
+        <br>
+        <span>Produits écologiques</span>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <i class="bi bi-emoji-smile service-icon"></i><br>
+        <span>Satisfaction garantie</span>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <i class="bi bi-lightning-charge service-icon"></i><br>
+        <span>Service rapide</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="contact-card text-center p-4">
+          <h5 class="mb-3">Nous contacter</h5>
+          <p class="mb-2">
+            <strong>Téléphone&nbsp;:</strong> <a href="tel:0493846291" class="text-dark">0493 84 62 91</a>
+          </p>
+          <p>
+            <strong>Email&nbsp;:</strong> <a href="mailto:JPCleanAuto@gmail.com" class="text-dark">JPCleanAuto@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="text-muted mt-3" style="font-size:0.95em;">
+      Les informations saisies sont strictement confidentielles et utilisées uniquement pour traiter votre demande ou prise de rendez-vous. Elles ne sont jamais revendues ni utilisées à des fins commerciales.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">FAQ – Questions fréquentes</h2>
+    <div class="accordion mb-4" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+            Faut-il prévoir une prise de courant&nbsp;?
+          </button>
+        </h2>
+        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Oui, il est nécessaire de prévoir une prise de courant accessible. J’apporte tout le matériel, mais j’aurai besoin de me brancher pour certains équipements (rallonge fournie).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+            Dois-je être présent(e) lors du lavage&nbsp;?
+          </button>
+        </h2>
+        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Oui, votre présence est nécessaire au début pour permettre l’accès à votre véhicule et à une prise de courant. Après cela, vous n’êtes pas obligé(e) de rester pendant toute la durée du lavage.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+            Puis-je annuler ou déplacer mon rendez-vous&nbsp;?
+          </button>
+        </h2>
+        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Oui, il suffit de me prévenir au minimum 24h à l’avance (par téléphone ou via Calendly) pour décaler ou annuler sans frais.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 J.P CleanAuto - jasonpougin1@gmail.com - 0493 84 62 91
+      | <a href="confidentialite.html" class="text-light ms-2" style="text-decoration:underline;">Confidentialité</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Promo flottante pour le premier lavage -->
+<div id="promoBanner" class="toast align-items-center show fade position-fixed bottom-0 end-0 m-3" style="z-index:1080; min-width:320px; max-width:95vw; background:#fffbe7; border-left:6px solid #ffb300; box-shadow:0 2px 18px rgba(0,0,0,0.08);">
+  <div class="d-flex p-3">
+    <div class="me-3">
+      <i class="bi bi-gift" style="font-size:1.8rem;color:#ffb300;"></i>
+    </div>
+    <div>
+      <b>Premier lavage complet à 40 € !</b><br>
+      <span class="text-muted" style="font-size:0.98em;">Intérieur + extérieur classique pour toute première commande.</span>
+      <br>
+      <a href="rendezvous.html" class="btn btn-warning btn-sm mt-2">
+        <i class="bi bi-calendar-check"></i> Profiter de l’offre
+      </a>
+    </div>
+    <button type="button" class="btn-close ms-2 m-auto" aria-label="Fermer" onclick="closePromoBanner()"></button>
+  </div>
+</div>
+
+</body>
+</html>
